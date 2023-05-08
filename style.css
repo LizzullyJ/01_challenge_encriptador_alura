@@ -1,0 +1,298 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+
+.contenedor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0.25turn, #372d50, 30%, #895363);
+}
+
+.logo {
+    position: absolute;
+    height: 48px;
+    left: 100px;
+    top: 40px;
+
+}
+
+.input-text {
+    position: absolute;
+    width: 42%;
+    height: 40%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+.input-text::placeholder {
+    color: white;
+}
+
+.input-text:focus,
+.input-text:active {
+    border: none;
+    outline: none;
+}
+
+.condiciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 70%;
+}
+
+.condiciones p {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.info {
+    display: inline-block;
+    height: 15px;
+    font-size: 12px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 71%;
+}
+
+.encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 1.5%;
+    width: 20%;
+    background: #4a2933;
+    border-radius: 24px;
+    border-color: none;
+    font-size: 16px;
+
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5%;
+
+    width: 20%;
+    background: #ffffff;
+    border: 1px solid #4a2933;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+
+    text-align: center;
+    color: #4a2933;
+    cursor: pointer;
+}
+
+.desencriptar:hover,
+.encriptar:hover,
+.copiar:hover {
+    margin: 0.1%;
+    padding: 1.3%;
+}
+
+.resultado {
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 77%;
+    left: 70%;
+    top: 5%;
+    background: #ffffff85;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+
+.divNoResuelto {
+    margin: auto;
+}
+
+.muneco {
+    height: 50%;
+    margin: 15px;
+}
+
+
+h2 {
+    color: #4a2933;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    margin: 15px;
+}
+
+.divNoresuelto p {
+    color: #4a2933c7;
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 30px ;
+}
+
+.divResuelto {
+    margin: 25px auto;
+}
+
+#texto-desencriptado {
+    border: none;
+    background: transparent;
+    position: absolute;
+    width:80%;
+    height: 70%;
+    left: 12%;
+    top: 15%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #4a2933c7;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+#texto-desencriptado:focus,
+#texto-desencriptado:active {
+    border: none;
+    outline: none;
+}
+
+
+
+.copiar {
+    position: absolute;
+    top:90%;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 1.5%;
+    width: 40%;
+    background: #ffffff;
+    border: 1px solid #4a2933;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #4a2933;
+    cursor: pointer;
+}
+
+/* Estilos Pie de pagina */
+footer {
+    position: absolute;
+    top: 88%;
+    left: 40%;
+    text-align: center;
+
+}
+
+.copyright {
+    font-size: 12px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.redes {
+    display: inline-flex;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 2px solid #ffffff;
+    margin: 5px;
+    padding: 2px;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.30s;
+    cursor: pointer;
+}
+
+.icons {
+    margin: auto;
+    display: block;
+    height: 15px;
+}
+
+.icons:hover {
+    animation: shake 0.25s;
+
+}
+
+#github:hover {
+    outline-offset: 4px;
+    background-color: black;
+    outline-color: black;
+}
+
+#linkedin:hover {
+    outline-offset: 4px;
+    background-color: #0A66C2;
+    outline-color: #0A66C2;
+}
+
+
+#twitter:hover {
+    outline-offset: 4px;
+    background-color: #1D9BF0;
+    outline-color: #1D9BF0;
+    ;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+
+}

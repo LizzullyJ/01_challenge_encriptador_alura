@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <img class="logo" src="assets/logo.png" alt="Logo alura">
+                <textarea name="texto" class="input-text" id="input-text" placeholder="Ingrese texto aquí" cols="30"
+                    rows="10"></textarea>
+
+                <div class="condiciones">
+                    <img src="assets/info.png" alt="info" class="info">
+                    <p class="info">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+
+            </div>
+            <div class="resultado">
+                <div class="divNoresuelto">
+                    <img src="assets/muneco.png" alt="Muñeco" class="muneco">
+                    <h2 class="res-mensaje">Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+
+                <div class="divResuelto" hidden>
+                    <textarea name="res" id="texto-desencriptado" cols="30" rows="10" readonly></textarea>
+                    <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/LizzullyJ">
+            <div class="redes" id="github"><img src="assets/github.png" class="icons" alt=""></div>
+        </a>
+        <a href="https://www.linkedin.com/in/sandra-lizzully-jacquez-fraire-17725976/">
+            <div class="redes" id="linkedin"><img src="assets/linkedin.png" class="icons" alt=""></div>
+        </a>
+        <a href="https://twitter.com/lizzullyjqz">
+            <div class="redes" id="twitter"><img src="assets/twitter.png" class="icons" alt=""></div>
+        </a>
+        <div class="nombre">
+            <p class="copyright">&copy Sandra Lizzully Jacquez Fraire</p>
+        </div>
+    </footer>
+
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
